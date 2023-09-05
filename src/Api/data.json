@@ -1,0 +1,54 @@
+{
+  "numbers": [
+    {
+      "un": 1,
+      "deux": 2,
+      "trois": 3,
+      "quatre": 4,
+      "cinq": 5,
+      "six": 6,
+      "sept": 7,
+      "huit": 8,
+      "neuf": 9
+    }
+  ],
+  "11 19": [
+    {
+      "onze": 11,
+      "douze": 12,
+      "treize": 13,
+      "quatorze": 14,
+      "quinze": 15,
+      "seize": 16,
+      "dix sept": 17,
+      "dix huit": 18,
+      "dix neuf": 19
+    }
+  ],
+  "dozens": [
+    {
+      "dix": 10,
+      "vingt": 20,
+      "trente": 30,
+      "quarante": 40,
+      "cinquante": 50,
+      "soixante": 60,
+      "soixante dix": 70,
+      "quatre vingts": 80,
+      "quatre vingt dix": 90
+    }
+  ],
+  "hundreds": [
+    {
+      "cent": 100,
+      "deux cents": 200,
+      "trois cents": 300,
+      "quatre cents": 400,
+      "cinq cents": 500,
+      "six cents": 600,
+      "sept cents": 700,
+      "huit cents": 800,
+      "neuf cents": 900
+    }
+  ]
+}
