@@ -16,23 +16,34 @@ function App() {
   const dozens = data.dozens;
   const hundreds = data.hundreds;
   useEffect(() => {
-    numbers.map((count) => {
-      let dataKeys = Object.entries(count);
-      console.log(dataKeys);
-    });
+    {
+      Object.entries(numbers).map(([key, value]) => {
+        //console.log(value);
+        Object.entries(value).map(([key, value]) => {
+          console.log(key);
+          console.log(value);
+          console.log(values);
+          if (values === key) {
+            setNumbers(value);
+          }
+        });
+      });
+    }
   }, [values]);
-  /*   numbers.map((count) => {
+  console.log();
+  /*   return numbers.map((count) => {
     let dataKeys = Object.keys(count);
 
     dataKeys.map((obj) => {
-      console.log(count);
-      
+      let k = obj;
+
+      console.log();
+      console.log(obj);
       if (obj === values) {
         setNumbers(values);
       }
     });
   }); */
-
   console.log(values);
   return (
     <div className={appStyles.main}>
