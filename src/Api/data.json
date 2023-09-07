@@ -29,11 +29,17 @@
     {
       "dix": 10,
       "vingt": 20,
+      "vingt et un": 21,
       "trente": 30,
+      "trente et un": 31,
       "quarante": 40,
+      "quarante et un": 41,
       "cinquante": 50,
+      "cinquante et un": 51,
       "soixante": 60,
+      "soixante et un": 61,
       "soixante dix": 70,
+      "soixante et onze": 71,
       "quatre vingts": 80,
       "quatre vingt dix": 90
     }

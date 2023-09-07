@@ -1,10 +1,14 @@
-import logo from "./logo.svg";
 import appStyles from "./App.module.css";
 import { useEffect, useState } from "react";
 import data from "./Api/data.json";
+import {
+  hendleData,
+  hendleComplexData,
+  hendleComplexTripleData,
+} from "./Utils/Hucs";
 function App() {
-  const [values, setValues] = useState();
-  const [number, setNumbers] = useState();
+  const [values, setValues] = useState("");
+  const [number, setNumbers] = useState("");
   const handleValuesChange = (event) => {
     setValues(event.target.value);
   };
@@ -12,39 +16,23 @@ function App() {
     setNumbers(event.target.value);
   };
   const numbers = data.numbers;
-  const el_ngt = data["11-19"];
+  const el_ngt = data["11 19"];
   const dozens = data.dozens;
   const hundreds = data.hundreds;
-  useEffect(() => {
-    {
-      Object.entries(numbers).map(([key, value]) => {
-        //console.log(value);
-        Object.entries(value).map(([key, value]) => {
-          console.log(key);
-          console.log(value);
-          console.log(values);
-          if (values === key) {
-            setNumbers(value);
-          }
-        });
-      });
-    }
-  }, [values]);
-  console.log();
-  /*   return numbers.map((count) => {
-    let dataKeys = Object.keys(count);
 
-    dataKeys.map((obj) => {
-      let k = obj;
+  const onClick = (e) => {
+    e.preventDefault();
+    hendleData(numbers, values, setNumbers);
+    hendleData(el_ngt, values, setNumbers);
+    hendleData(dozens, values, setNumbers);
+    hendleData(hundreds, values, setNumbers);
+    hendleComplexData(dozens, numbers, values, setNumbers);
+    hendleComplexData(hundreds, numbers, values, setNumbers);
+    hendleComplexData(hundreds, el_ngt, values, setNumbers);
+    hendleComplexData(hundreds, dozens, values, setNumbers);
+    hendleComplexTripleData(hundreds, dozens, numbers, values, setNumbers);
+  };
 
-      console.log();
-      console.log(obj);
-      if (obj === values) {
-        setNumbers(values);
-      }
-    });
-  }); */
-  console.log(values);
   return (
     <div className={appStyles.main}>
       <form className={appStyles.form}>
@@ -55,11 +43,16 @@ function App() {
           type="text"
           value={values}
         ></input>
+        <button onClick={onClick} className={appStyles.btn}>
+          Перевести
+        </button>
         <input
           onChange={handleNumbersChange}
           value={number}
           className={appStyles.input}
           type="text"
+          readOnly
+          placeholder="Вывод"
         ></input>
       </form>
     </div>

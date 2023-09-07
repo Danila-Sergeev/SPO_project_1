@@ -44,6 +44,7 @@
   flex-direction: column;
   max-width: 800px;
   margin: 200px auto;
+  align-items: center;
 }
 .input {
   outline: none;
@@ -64,4 +65,20 @@
 .input:hover {
   height: 209px;
   width: 809px;
+}
+input:last-child {
+  text-align: center;
+}
+.btn {
+  width: 500px;
+  height: 100px;
+  margin-bottom: 30px;
+  font-size: 30px;
+  border-radius: 30px;
+  transition-duration: 0.7s;
+  transition-property: height, width;
+}
+.btn:hover {
+  height: 109px;
+  width: 509px;
 }
