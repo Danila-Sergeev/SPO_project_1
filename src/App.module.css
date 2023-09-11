@@ -50,11 +50,8 @@
   outline: none;
   border: 4px solid #cccccc;
   border-radius: 3px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -khtml-border-radius: 3px;
   height: 200px;
-  width: 800px;
+  width: 700px;
   background-color: antiquewhite;
   margin-bottom: 30px;
   font-size: 50px;
@@ -64,10 +61,26 @@
 }
 .input:hover {
   height: 209px;
-  width: 809px;
+  width: 709px;
 }
-input:last-child {
+input:nth-child(3) {
   text-align: center;
+}
+.inputNumber {
+  text-align: center;
+  margin-left: 30px;
+  outline: none;
+  border: 4px solid #cccccc;
+  border-radius: 3px;
+  height: 200px;
+  width: 200px;
+  background-color: antiquewhite;
+  font-size: 35px;
+  transition-duration: 0.7s;
+  transition-property: height, width;
+}
+.inputBox {
+  display: flex;
 }
 .btn {
   width: 500px;
@@ -81,4 +94,36 @@ input:last-child {
 .btn:hover {
   height: 109px;
   width: 509px;
+}
+.inputPrevius {
+  word-wrap: break-word;
+  word-break: break-all;
+  outline: none;
+  border: 4px solid #cccccc;
+  border-radius: 3px;
+  height: 200px;
+  width: 440px;
+  background-color: antiquewhite;
+  margin-bottom: 30px;
+  font-size: 30px;
+  text-align: inherit;
+  align-items: inherit;
+  font-family: inherit;
+  padding: 15px;
+}
+
+.text {
+  font-size: 30px;
+  color: azure;
+  font-weight: 450;
+}
+.textError {
+  font-size: 30px;
+  color: red;
+  font-weight: 450;
+}
+.box {
+  width: 980px;
+  display: flex;
+  justify-content: space-between;
 }

@@ -38,23 +38,22 @@
       "cinquante et un": 51,
       "soixante": 60,
       "soixante et un": 61,
-      "soixante dix": 70,
       "soixante et onze": 71,
-      "quatre vingts": 80,
+      "quatre vingt": 80,
       "quatre vingt dix": 90
     }
   ],
   "hundreds": [
     {
       "cent": 100,
-      "deux cents": 200,
-      "trois cents": 300,
-      "quatre cents": 400,
-      "cinq cents": 500,
-      "six cents": 600,
-      "sept cents": 700,
-      "huit cents": 800,
-      "neuf cents": 900
+      "deux cent": 200,
+      "trois cent": 300,
+      "quatre cent": 400,
+      "cinq cent": 500,
+      "six cent": 600,
+      "sept cent": 700,
+      "huit cent": 800,
+      "neuf cent": 900
     }
   ]
 }

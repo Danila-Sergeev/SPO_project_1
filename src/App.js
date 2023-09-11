@@ -9,6 +9,7 @@ import {
 function App() {
   const [values, setValues] = useState("");
   const [number, setNumbers] = useState("");
+  const [prevValues, setPrevValues] = useState("");
   const handleValuesChange = (event) => {
     setValues(event.target.value);
   };
@@ -20,40 +21,136 @@ function App() {
   const dozens = data.dozens;
   const hundreds = data.hundreds;
 
-  const onClick = (e) => {
+  const onSubmit = (e) => {
     e.preventDefault();
-    hendleData(numbers, values, setNumbers);
-    hendleData(el_ngt, values, setNumbers);
-    hendleData(dozens, values, setNumbers);
-    hendleData(hundreds, values, setNumbers);
-    hendleComplexData(dozens, numbers, values, setNumbers);
-    hendleComplexData(hundreds, numbers, values, setNumbers);
-    hendleComplexData(hundreds, el_ngt, values, setNumbers);
-    hendleComplexData(hundreds, dozens, values, setNumbers);
-    hendleComplexTripleData(hundreds, dozens, numbers, values, setNumbers);
+    hendleData(numbers, values, setNumbers, setValues, setPrevValues);
+    hendleData(el_ngt, values, setNumbers, setValues, setPrevValues);
+    hendleData(dozens, values, setNumbers, setValues, setPrevValues);
+    hendleData(hundreds, values, setNumbers, setValues, setPrevValues);
+    hendleComplexData(
+      dozens,
+      numbers,
+      values,
+      setNumbers,
+      setValues,
+      setPrevValues
+    );
+    hendleComplexData(
+      dozens,
+      el_ngt,
+      values,
+      setNumbers,
+      setValues,
+      setPrevValues
+    );
+    hendleComplexData(
+      dozens,
+      dozens,
+      values,
+      setNumbers,
+      setValues,
+      setPrevValues
+    );
+    hendleComplexData(
+      hundreds,
+      numbers,
+      values,
+      setNumbers,
+      setValues,
+      setPrevValues
+    );
+    hendleComplexData(
+      hundreds,
+      el_ngt,
+      values,
+      setNumbers,
+      setValues,
+      setPrevValues
+    );
+    hendleComplexData(
+      hundreds,
+      dozens,
+      values,
+      setNumbers,
+      setValues,
+      setPrevValues
+    );
+    hendleComplexTripleData(
+      hundreds,
+      dozens,
+      numbers,
+      values,
+      setNumbers,
+      setValues,
+      setPrevValues
+    );
+    hendleComplexTripleData(
+      hundreds,
+      dozens,
+      el_ngt,
+      values,
+      setNumbers,
+      setValues,
+      setPrevValues
+    );
+    hendleComplexTripleData(
+      hundreds,
+      dozens,
+      dozens,
+      values,
+      setNumbers,
+      setValues,
+      setPrevValues
+    );
   };
 
   return (
     <div className={appStyles.main}>
-      <form className={appStyles.form}>
-        <input
-          onChange={handleValuesChange}
-          placeholder="Введите французское число"
-          className={appStyles.input}
-          type="text"
-          value={values}
-        ></input>
-        <button onClick={onClick} className={appStyles.btn}>
+      <form onSubmit={onSubmit} className={appStyles.form}>
+        <div className={appStyles.inputBox}>
+          <input
+            onChange={handleValuesChange}
+            placeholder="Введите французское число"
+            className={appStyles.input}
+            type="text"
+            value={values}
+          ></input>
+          <input
+            value={number}
+            className={appStyles.inputNumber}
+            type="text"
+            readOnly
+            placeholder="Результат"
+          ></input>
+        </div>
+        <button type="submit" className={appStyles.btn}>
           Перевести
         </button>
-        <input
-          onChange={handleNumbersChange}
-          value={number}
-          className={appStyles.input}
-          type="text"
-          readOnly
-          placeholder="Вывод"
-        ></input>
+
+        <div className={appStyles.box}>
+          <div>
+            <p className={appStyles.text}>Предыдущий ввод :</p>
+            <input
+              onChange={handleNumbersChange}
+              value={prevValues}
+              className={appStyles.inputPrevius}
+              type="text"
+              readOnly
+              placeholder="Предыдущий ввод"
+            ></input>
+          </div>
+          <div>
+            <p className={appStyles.textError}>Ошибка :</p>
+            <textarea
+              value={""}
+              className={appStyles.inputPrevius}
+              type="text"
+              name="error"
+              readOnly
+              placeholder=""
+            ></textarea>
+          </div>
+        </div>
       </form>
     </div>
   );

@@ -1,984 +1,1003 @@
-/* vingt	
-	vingt et un	
-	vingt-deux	
-	vingt-trois	
-	vingt-quatre	
-	vingt-cinq	
+/* 
+1	un	
+2	deux	
+3	trois	
+4	quatre	
+5	cinq	
+6	six	
+7	sept	
+8	huit	
+9	neuf	
+10	dix	
+11	onze	
+12	douze	
+13	treize	
+14	quatorze	
+15	quinze	
+16	seize	
+17	dix sept	
+18	dix huit	
+19	dix neuf	
+20	vingt	
+21	vingt et un	
+22	vingt deux	
+23	vingt trois	
+24	vingt quatre	
+25	vingt cinq	
+26	vingt six	
+27	vingt sept	
+28	vingt huit	
+29	vingt neuf	
+30	trente	
+31	trente et un	
+32	trente deux	
+33	trente trois	
+34	trente quatre	
+35	trente cinq	
+36	trente six	
+37	trente sept	
+38	trente huit	
+39	trente neuf	
+40	quarante	
+41	quarante et un	
+42	quarante deux	
+43	quarante trois	
+44	quarante quatre	
+45	quarante cinq	
+46	quarante six	
+47	quarante sept	
+48	quarante huit	
+49	quarante neuf	
+50	cinquante	
 
 
-	vingt-six	
-	vingt-sept	
-	vingt-huit	
-	vingt-neuf	
-	trente	
-	trente et un	
-	trente-deux	
-	trente-trois	
-	trente-quatre	
-	trente-cinq	
-	trente-six	
-	trente-sept	
-	trente-huit	
-	trente-neuf	
-	quarante	
-	quarante et un	
-	quarante-deux	
-	quarante-trois	
-	quarante-quatre	
-	quarante-cinq	
-	quarante-six	
-	quarante-sept	
-	quarante-huit	
-	quarante-neuf	
-	cinquante	
-
-
-	cinquante et un	
-	cinquante-deux	
-	cinquante-trois	
-	cinquante-quatre	
-	cinquante-cinq	
-	cinquante-six	
-	cinquante-sept	
-	cinquante-huit	
-	cinquante-neuf	
-	soixante	
-	soixante et un	
-	soixante-deux	
-	soixante-trois	
-	soixante-quatre	
-	soixante-cinq	
-	soixante-six	
-	soixante-sept	
-	soixante-huit	
-	soixante-neuf	
-	soixante-dix	
-	soixante et onze	
-	soixante-douze	
-	soixante-treize	
-	soixante-quatorze	
-	soixante-quinze	
-	soixante-seize	
-	soixante-dix-sept	
-	soixante-dix-huit	
-	soixante-dix-neuf	
-	quatre-vingts	
-	quatre-vingt-un	
-	quatre-vingt-deux	
-	quatre-vingt-trois	
-	quatre-vingt-quatre	
-	quatre-vingt-cinq	
-	quatre-vingt-six	
-	quatre-vingt-sept	
-	quatre-vingt-huit	
-	quatre-vingt-neuf	
-	quatre-vingt-dix	
-	quatre-vingt-onze	
-	quatre-vingt-douze	
-	quatre-vingt-treize	
-	quatre-vingt-quatorze	
-	quatre-vingt-quinze	
-	quatre-vingt-seize	
-	quatre-vingt-dix-sept	
-	quatre-vingt-dix-huit	
-	quatre-vingt-dix-neuf	
-	cent	
-	cent un
-	cent deux
-	cent trois
-	cent quatre
-	cent cinq
-	cent six
-	cent sept
-	cent huit
-	cent neuf
-	cent dix
-	cent onze
-	cent douze
-	cent treize
-	cent quatorze
-	cent quinze
-	cent seize
-	cent dix-sept
-	cent dix-huit
-	cent dix-neuf
-	cent vingt
-	cent vingt et un
-	cent vingt-deux
-	cent vingt-trois
-	cent vingt-quatre
-	cent vingt-cinq
-	cent vingt-six
-	cent vingt-sept
-	cent vingt-huit
-	cent vingt-neuf
-	cent trente
-	cent trente et un
-	cent trente-deux
-	cent trente-trois
-	cent trente-quatre
-	cent trente-cinq
-	cent trente-six
-	cent trente-sept
-	cent trente-huit
-	cent trente-neuf
-	cent quarante
-	cent quarante et un
-	cent quarante-deux
-	cent quarante-trois
-	cent quarante-quatre
-	cent quarante-cinq
-	cent quarante-six
-	cent quarante-sept
-	cent quarante-huit
-	cent quarante-neuf
-	cent cinquante
-	cent cinquante et un
-	cent cinquante-deux
-	cent cinquante-trois
-	cent cinquante-quatre
-	cent cinquante-cinq
-	cent cinquante-six
-	cent cinquante-sept
-	cent cinquante-huit
-	cent cinquante-neuf
-	cent soixante
-	cent soixante et un
-	cent soixante-deux
-	cent soixante-trois
-	cent soixante-quatre
-	cent soixante-cinq
-	cent soixante-six
-	cent soixante-sept
-	cent soixante-huit
-	cent soixante-neuf
-	cent soixante-dix
-	cent soixante et onze
-	cent soixante-douze
-	cent soixante-treize
-	cent soixante-quatorze
-	cent soixante-quinze
-	cent soixante-seize
-	cent soixante-dix-sept
-	cent soixante-dix-huit
-	cent soixante-dix-neuf
-	cent quatre-vingts
-	cent quatre-vingt-un
-	cent quatre-vingt-deux
-	cent quatre-vingt-trois
-	cent quatre-vingt-quatre
-	cent quatre-vingt-cinq
-	cent quatre-vingt-six
-	cent quatre-vingt-sept
-	cent quatre-vingt-huit
-	cent quatre-vingt-neuf
-	cent quatre-vingt-dix
-	cent quatre-vingt-onze
-	cent quatre-vingt-douze
-	cent quatre-vingt-treize
-	cent quatre-vingt-quatorze
-	cent quatre-vingt-quinze
-	cent quatre-vingt-seize
-	cent quatre-vingt-dix-sept
-	cent quatre-vingt-dix-huit
-	cent quatre-vingt-dix-neuf
-	deux cents
-	deux cent un
-	deux cent deux
-	deux cent trois
-	deux cent quatre
-	deux cent cinq
-	deux cent six
-	deux cent sept
-	deux cent huit
-	deux cent neuf
-	deux cent dix
-	deux cent onze
-	deux cent douze
-	deux cent treize
-	deux cent quatorze
-	deux cent quinze
-	deux cent seize
-	deux cent dix-sept
-	deux cent dix-huit
-	deux cent dix-neuf
-	deux cent vingt
-	deux cent vingt et un
-	deux cent vingt-deux
-	deux cent vingt-trois
-	deux cent vingt-quatre
-	deux cent vingt-cinq
-	deux cent vingt-six
-	deux cent vingt-sept
-	deux cent vingt-huit
-	deux cent vingt-neuf
-	deux cent trente
-	deux cent trente et un
-	deux cent trente-deux
-	deux cent trente-trois
-	deux cent trente-quatre
-	deux cent trente-cinq
-	deux cent trente-six
-	deux cent trente-sept
-	deux cent trente-huit
-	deux cent trente-neuf
-	deux cent quarante
-	deux cent quarante et un
-	deux cent quarante-deux
-	deux cent quarante-trois
-	deux cent quarante-quatre
-	deux cent quarante-cinq
-	deux cent quarante-six
-	deux cent quarante-sept
-	deux cent quarante-huit
-	deux cent quarante-neuf
-	deux cent cinquante
-	deux cent cinquante et un
-	deux cent cinquante-deux
-	deux cent cinquante-trois
-	deux cent cinquante-quatre
-	deux cent cinquante-cinq
-	deux cent cinquante-six
-	deux cent cinquante-sept
-	deux cent cinquante-huit
-	deux cent cinquante-neuf
-	deux cent soixante
-	deux cent soixante et un
-	deux cent soixante-deux
-	deux cent soixante-trois
-	deux cent soixante-quatre
-	deux cent soixante-cinq
-	deux cent soixante-six
-	deux cent soixante-sept
-	deux cent soixante-huit
-	deux cent soixante-neuf
-	deux cent soixante-dix
-	deux cent soixante et onze
-	deux cent soixante-douze
-	deux cent soixante-treize
-	deux cent soixante-quatorze
-	deux cent soixante-quinze
-	deux cent soixante-seize
-	deux cent soixante-dix-sept
-	deux cent soixante-dix-huit
-	deux cent soixante-dix-neuf
-	deux cent quatre-vingts
-	deux cent quatre-vingt-un
-	deux cent quatre-vingt-deux
-	deux cent quatre-vingt-trois
-	deux cent quatre-vingt-quatre
-	deux cent quatre-vingt-cinq
-	deux cent quatre-vingt-six
-	deux cent quatre-vingt-sept
-	deux cent quatre-vingt-huit
-	deux cent quatre-vingt-neuf
-	deux cent quatre-vingt-dix
-	deux cent quatre-vingt-onze
-	deux cent quatre-vingt-douze
-	deux cent quatre-vingt-treize
-	deux cent quatre-vingt-quatorze
-	deux cent quatre-vingt-quinze
-	deux cent quatre-vingt-seize
-	deux cent quatre-vingt-dix-sept
-	deux cent quatre-vingt-dix-huit
-	deux cent quatre-vingt-dix-neuf
-	trois cents
-	trois cent un
-	trois cent deux
-	trois cent trois
-	trois cent quatre
-	trois cent cinq
-	trois cent six
-	trois cent sept
-	trois cent huit
-	trois cent neuf
-	trois cent dix
-	trois cent onze
-	trois cent douze
-	trois cent treize
-	trois cent quatorze
-	trois cent quinze
-	trois cent seize
-	trois cent dix-sept
-	trois cent dix-huit
-	trois cent dix-neuf
-	trois cent vingt
-	trois cent vingt et un
-	trois cent vingt-deux
-	trois cent vingt-trois
-	trois cent vingt-quatre
-	trois cent vingt-cinq
-	trois cent vingt-six
-	trois cent vingt-sept
-	trois cent vingt-huit
-	trois cent vingt-neuf
-	trois cent trente
-	trois cent trente et un
-	trois cent trente-deux
-	trois cent trente-trois
-	trois cent trente-quatre
-	trois cent trente-cinq
-	trois cent trente-six
-	trois cent trente-sept
-	trois cent trente-huit
-	trois cent trente-neuf
-	trois cent quarante
-	trois cent quarante et un
-	trois cent quarante-deux
-	trois cent quarante-trois
-	trois cent quarante-quatre
-	trois cent quarante-cinq
-	trois cent quarante-six
-	trois cent quarante-sept
-	trois cent quarante-huit
-	trois cent quarante-neuf
-	trois cent cinquante
-	trois cent cinquante et un
-	trois cent cinquante-deux
-	trois cent cinquante-trois
-	trois cent cinquante-quatre
-	trois cent cinquante-cinq
-	trois cent cinquante-six
-	trois cent cinquante-sept
-	trois cent cinquante-huit
-	trois cent cinquante-neuf
-	trois cent soixante
-	trois cent soixante et un
-	trois cent soixante-deux
-	trois cent soixante-trois
-	trois cent soixante-quatre
-	trois cent soixante-cinq
-	trois cent soixante-six
-	trois cent soixante-sept
-	trois cent soixante-huit
-	trois cent soixante-neuf
-	trois cent soixante-dix
-	trois cent soixante et onze
-	trois cent soixante-douze
-	trois cent soixante-treize
-	trois cent soixante-quatorze
-	trois cent soixante-quinze
-	trois cent soixante-seize
-	trois cent soixante-dix-sept
-	trois cent soixante-dix-huit
-	trois cent soixante-dix-neuf
-	trois cent quatre-vingts
-	trois cent quatre-vingt-un
-	trois cent quatre-vingt-deux
-	trois cent quatre-vingt-trois
-	trois cent quatre-vingt-quatre
-	trois cent quatre-vingt-cinq
-	trois cent quatre-vingt-six
-	trois cent quatre-vingt-sept
-	trois cent quatre-vingt-huit
-	trois cent quatre-vingt-neuf
-	trois cent quatre-vingt-dix
-	trois cent quatre-vingt-onze
-	trois cent quatre-vingt-douze
-	trois cent quatre-vingt-treize
-	trois cent quatre-vingt-quatorze
-	trois cent quatre-vingt-quinze
-	trois cent quatre-vingt-seize
-	trois cent quatre-vingt-dix-sept
-	trois cent quatre-vingt-dix-huit
-	trois cent quatre-vingt-dix-neuf
-	quatre cents
-	quatre cent un
-	quatre cent deux
-	quatre cent trois
-	quatre cent quatre
-	quatre cent cinq
-	quatre cent six
-	quatre cent sept
-	quatre cent huit
-	quatre cent neuf
-	quatre cent dix
-	quatre cent onze
-	quatre cent douze
-	quatre cent treize
-	quatre cent quatorze
-	quatre cent quinze
-	quatre cent seize
-	quatre cent dix-sept
-	quatre cent dix-huit
-	quatre cent dix-neuf
-	quatre cent vingt
-	quatre cent vingt et un
-	quatre cent vingt-deux
-	quatre cent vingt-trois
-	quatre cent vingt-quatre
-	quatre cent vingt-cinq
-	quatre cent vingt-six
-	quatre cent vingt-sept
-	quatre cent vingt-huit
-	quatre cent vingt-neuf
-	quatre cent trente
-	quatre cent trente et un
-	quatre cent trente-deux
-	quatre cent trente-trois
-	quatre cent trente-quatre
-	quatre cent trente-cinq
-	quatre cent trente-six
-	quatre cent trente-sept
-	quatre cent trente-huit
-	quatre cent trente-neuf
-	quatre cent quarante
-	quatre cent quarante et un
-	quatre cent quarante-deux
-	quatre cent quarante-trois
-	quatre cent quarante-quatre
-	quatre cent quarante-cinq
-	quatre cent quarante-six
-	quatre cent quarante-sept
-	quatre cent quarante-huit
-	quatre cent quarante-neuf
-	quatre cent cinquante
-	quatre cent cinquante et un
-	quatre cent cinquante-deux
-	quatre cent cinquante-trois
-	quatre cent cinquante-quatre
-	quatre cent cinquante-cinq
-	quatre cent cinquante-six
-	quatre cent cinquante-sept
-	quatre cent cinquante-huit
-	quatre cent cinquante-neuf
-	quatre cent soixante
-	quatre cent soixante et un
-	quatre cent soixante-deux
-	quatre cent soixante-trois
-	quatre cent soixante-quatre
-	quatre cent soixante-cinq
-	quatre cent soixante-six
-	quatre cent soixante-sept
-	quatre cent soixante-huit
-	quatre cent soixante-neuf
-	quatre cent soixante-dix
-	quatre cent soixante et onze
-	quatre cent soixante-douze
-	quatre cent soixante-treize
-	quatre cent soixante-quatorze
-	quatre cent soixante-quinze
-	quatre cent soixante-seize
-	quatre cent soixante-dix-sept
-	quatre cent soixante-dix-huit
-	quatre cent soixante-dix-neuf
-	quatre cent quatre-vingts
-	quatre cent quatre-vingt-un
-	quatre cent quatre-vingt-deux
-	quatre cent quatre-vingt-trois
-	quatre cent quatre-vingt-quatre
-	quatre cent quatre-vingt-cinq
-	quatre cent quatre-vingt-six
-	quatre cent quatre-vingt-sept
-	quatre cent quatre-vingt-huit
-	quatre cent quatre-vingt-neuf
-	quatre cent quatre-vingt-dix
-	quatre cent quatre-vingt-onze
-	quatre cent quatre-vingt-douze
-	quatre cent quatre-vingt-treize
-	quatre cent quatre-vingt-quatorze
-	quatre cent quatre-vingt-quinze
-	quatre cent quatre-vingt-seize
-	quatre cent quatre-vingt-dix-sept
-	quatre cent quatre-vingt-dix-huit
-	quatre cent quatre-vingt-dix-neuf
-	cinq cents
-	cinq cent un
-	cinq cent deux
-	cinq cent trois
-	cinq cent quatre
-	cinq cent cinq
-	cinq cent six
-	cinq cent sept
-	cinq cent huit
-	cinq cent neuf
-	cinq cent dix
-	cinq cent onze
-	cinq cent douze
-	cinq cent treize
-	cinq cent quatorze
-	cinq cent quinze
-	cinq cent seize
-	cinq cent dix-sept
-	cinq cent dix-huit
-	cinq cent dix-neuf
-	cinq cent vingt
-	cinq cent vingt et un
-	cinq cent vingt-deux
-	cinq cent vingt-trois
-	cinq cent vingt-quatre
-	cinq cent vingt-cinq
-	cinq cent vingt-six
-	cinq cent vingt-sept
-	cinq cent vingt-huit
-	cinq cent vingt-neuf
-	cinq cent trente
-	cinq cent trente et un
-	cinq cent trente-deux
-	cinq cent trente-trois
-	cinq cent trente-quatre
-	cinq cent trente-cinq
-	cinq cent trente-six
-	cinq cent trente-sept
-	cinq cent trente-huit
-	cinq cent trente-neuf
-	cinq cent quarante
-	cinq cent quarante et un
-	cinq cent quarante-deux
-	cinq cent quarante-trois
-	cinq cent quarante-quatre
-	cinq cent quarante-cinq
-	cinq cent quarante-six
-	cinq cent quarante-sept
-	cinq cent quarante-huit
-	cinq cent quarante-neuf
-	cinq cent cinquante
-	cinq cent cinquante et un
-	cinq cent cinquante-deux
-	cinq cent cinquante-trois
-	cinq cent cinquante-quatre
-	cinq cent cinquante-cinq
-	cinq cent cinquante-six
-	cinq cent cinquante-sept
-	cinq cent cinquante-huit
-	cinq cent cinquante-neuf
-	cinq cent soixante
-	cinq cent soixante et un
-	cinq cent soixante-deux
-	cinq cent soixante-trois
-	cinq cent soixante-quatre
-	cinq cent soixante-cinq
-	cinq cent soixante-six
-	cinq cent soixante-sept
-	cinq cent soixante-huit
-	cinq cent soixante-neuf
-	cinq cent soixante-dix
-	cinq cent soixante et onze
-	cinq cent soixante-douze
-	cinq cent soixante-treize
-	cinq cent soixante-quatorze
-	cinq cent soixante-quinze
-	cinq cent soixante-seize
-	cinq cent soixante-dix-sept
-	cinq cent soixante-dix-huit
-	cinq cent soixante-dix-neuf
-	cinq cent quatre-vingts
-	cinq cent quatre-vingt-un
-	cinq cent quatre-vingt-deux
-	cinq cent quatre-vingt-trois
-	cinq cent quatre-vingt-quatre
-	cinq cent quatre-vingt-cinq
-	cinq cent quatre-vingt-six
-	cinq cent quatre-vingt-sept
-	cinq cent quatre-vingt-huit
-	cinq cent quatre-vingt-neuf
-	cinq cent quatre-vingt-dix
-	cinq cent quatre-vingt-onze
-	cinq cent quatre-vingt-douze
-	cinq cent quatre-vingt-treize
-	cinq cent quatre-vingt-quatorze
-	cinq cent quatre-vingt-quinze
-	cinq cent quatre-vingt-seize
-	cinq cent quatre-vingt-dix-sept
-	cinq cent quatre-vingt-dix-huit
-	cinq cent quatre-vingt-dix-neuf
-	six cents
-	six cent un
-	six cent deux
-	six cent trois
-	six cent quatre
-	six cent cinq
-	six cent six
-	six cent sept
-	six cent huit
-	six cent neuf
-	six cent dix
-	six cent onze
-	six cent douze
-	six cent treize
-	six cent quatorze
-	six cent quinze
-	six cent seize
-	six cent dix-sept
-	six cent dix-huit
-	six cent dix-neuf
-	six cent vingt
-	six cent vingt et un
-	six cent vingt-deux
-	six cent vingt-trois
-	six cent vingt-quatre
-	six cent vingt-cinq
-	six cent vingt-six
-	six cent vingt-sept
-	six cent vingt-huit
-	six cent vingt-neuf
-	six cent trente
-	six cent trente et un
-	six cent trente-deux
-	six cent trente-trois
-	six cent trente-quatre
-	six cent trente-cinq
-	six cent trente-six
-	six cent trente-sept
-	six cent trente-huit
-	six cent trente-neuf
-	six cent quarante
-	six cent quarante et un
-	six cent quarante-deux
-	six cent quarante-trois
-	six cent quarante-quatre
-	six cent quarante-cinq
-	six cent quarante-six
-	six cent quarante-sept
-	six cent quarante-huit
-	six cent quarante-neuf
-	six cent cinquante
-	six cent cinquante et un
-	six cent cinquante-deux
-	six cent cinquante-trois
-	six cent cinquante-quatre
-	six cent cinquante-cinq
-	six cent cinquante-six
-	six cent cinquante-sept
-	six cent cinquante-huit
-	six cent cinquante-neuf
-	six cent soixante
-	six cent soixante et un
-	six cent soixante-deux
-	six cent soixante-trois
-	six cent soixante-quatre
-	six cent soixante-cinq
-	six cent soixante-six
-	six cent soixante-sept
-	six cent soixante-huit
-	six cent soixante-neuf
-	six cent soixante-dix
-	six cent soixante et onze
-	six cent soixante-douze
-	six cent soixante-treize
-	six cent soixante-quatorze
-	six cent soixante-quinze
-	six cent soixante-seize
-	six cent soixante-dix-sept
-	six cent soixante-dix-huit
-	six cent soixante-dix-neuf
-	six cent quatre-vingts
-	six cent quatre-vingt-un
-	six cent quatre-vingt-deux
-	six cent quatre-vingt-trois
-	six cent quatre-vingt-quatre
-	six cent quatre-vingt-cinq
-	six cent quatre-vingt-six
-	six cent quatre-vingt-sept
-	six cent quatre-vingt-huit
-	six cent quatre-vingt-neuf
-	six cent quatre-vingt-dix
-	six cent quatre-vingt-onze
-	six cent quatre-vingt-douze
-	six cent quatre-vingt-treize
-	six cent quatre-vingt-quatorze
-	six cent quatre-vingt-quinze
-	six cent quatre-vingt-seize
-	six cent quatre-vingt-dix-sept
-	six cent quatre-vingt-dix-huit
-	six cent quatre-vingt-dix-neuf
-	sept cents
-	sept cent un
-	sept cent deux
-	sept cent trois
-	sept cent quatre
-	sept cent cinq
-	sept cent six
-	sept cent sept
-	sept cent huit
-	sept cent neuf
-	sept cent dix
-	sept cent onze
-	sept cent douze
-	sept cent treize
-	sept cent quatorze
-	sept cent quinze
-	sept cent seize
-	sept cent dix-sept
-	sept cent dix-huit
-	sept cent dix-neuf
-	sept cent vingt
-	sept cent vingt et un
-	sept cent vingt-deux
-	sept cent vingt-trois
-	sept cent vingt-quatre
-	sept cent vingt-cinq
-	sept cent vingt-six
-	sept cent vingt-sept
-	sept cent vingt-huit
-	sept cent vingt-neuf
-	sept cent trente
-	sept cent trente et un
-	sept cent trente-deux
-	sept cent trente-trois
-	sept cent trente-quatre
-	sept cent trente-cinq
-	sept cent trente-six
-	sept cent trente-sept
-	sept cent trente-huit
-	sept cent trente-neuf
-	sept cent quarante
-	sept cent quarante et un
-	sept cent quarante-deux
-	sept cent quarante-trois
-	sept cent quarante-quatre
-	sept cent quarante-cinq
-	sept cent quarante-six
-	sept cent quarante-sept
-	sept cent quarante-huit
-	sept cent quarante-neuf
-	sept cent cinquante
-	sept cent cinquante et un
-	sept cent cinquante-deux
-	sept cent cinquante-trois
-	sept cent cinquante-quatre
-	sept cent cinquante-cinq
-	sept cent cinquante-six
-	sept cent cinquante-sept
-	sept cent cinquante-huit
-	sept cent cinquante-neuf
-	sept cent soixante
-	sept cent soixante et un
-	sept cent soixante-deux
-	sept cent soixante-trois
-	sept cent soixante-quatre
-	sept cent soixante-cinq
-	sept cent soixante-six
-	sept cent soixante-sept
-	sept cent soixante-huit
-	sept cent soixante-neuf
-	sept cent soixante-dix
-	sept cent soixante et onze
-	sept cent soixante-douze
-	sept cent soixante-treize
-	sept cent soixante-quatorze
-	sept cent soixante-quinze
-	sept cent soixante-seize
-	sept cent soixante-dix-sept
-	sept cent soixante-dix-huit
-	sept cent soixante-dix-neuf
-	sept cent quatre-vingts
-	sept cent quatre-vingt-un
-	sept cent quatre-vingt-deux
-	sept cent quatre-vingt-trois
-	sept cent quatre-vingt-quatre
-	sept cent quatre-vingt-cinq
-	sept cent quatre-vingt-six
-	sept cent quatre-vingt-sept
-	sept cent quatre-vingt-huit
-	sept cent quatre-vingt-neuf
-	sept cent quatre-vingt-dix
-	sept cent quatre-vingt-onze
-	sept cent quatre-vingt-douze
-	sept cent quatre-vingt-treize
-	sept cent quatre-vingt-quatorze
-	sept cent quatre-vingt-quinze
-	sept cent quatre-vingt-seize
-	sept cent quatre-vingt-dix-sept
-	sept cent quatre-vingt-dix-huit
-	sept cent quatre-vingt-dix-neuf
-	huit cents
-	huit cent un
-	huit cent deux
-	huit cent trois
-	huit cent quatre
-	huit cent cinq
-	huit cent six
-	huit cent sept
-	huit cent huit
-	huit cent neuf
-	huit cent dix
-	huit cent onze
-	huit cent douze
-	huit cent treize
-	huit cent quatorze
-	huit cent quinze
-	huit cent seize
-	huit cent dix-sept
-	huit cent dix-huit
-	huit cent dix-neuf
-	huit cent vingt
-	huit cent vingt et un
-	huit cent vingt-deux
-	huit cent vingt-trois
-	huit cent vingt-quatre
-	huit cent vingt-cinq
-	huit cent vingt-six
-	huit cent vingt-sept
-	huit cent vingt-huit
-	huit cent vingt-neuf
-	huit cent trente
-	huit cent trente et un
-	huit cent trente-deux
-	huit cent trente-trois
-	huit cent trente-quatre
-	huit cent trente-cinq
-	huit cent trente-six
-	huit cent trente-sept
-	huit cent trente-huit
-	huit cent trente-neuf
-	huit cent quarante
-	huit cent quarante et un
-	huit cent quarante-deux
-	huit cent quarante-trois
-	huit cent quarante-quatre
-	huit cent quarante-cinq
-	huit cent quarante-six
-	huit cent quarante-sept
-	huit cent quarante-huit
-	huit cent quarante-neuf
-	huit cent cinquante
-	huit cent cinquante et un
-	huit cent cinquante-deux
-	huit cent cinquante-trois
-	huit cent cinquante-quatre
-	huit cent cinquante-cinq
-	huit cent cinquante-six
-	huit cent cinquante-sept
-	huit cent cinquante-huit
-	huit cent cinquante-neuf
-	huit cent soixante
-	huit cent soixante et un
-	huit cent soixante-deux
-	huit cent soixante-trois
-	huit cent soixante-quatre
-	huit cent soixante-cinq
-	huit cent soixante-six
-	huit cent soixante-sept
-	huit cent soixante-huit
-	huit cent soixante-neuf
-	huit cent soixante-dix
-	huit cent soixante et onze
-	huit cent soixante-douze
-	huit cent soixante-treize
-	huit cent soixante-quatorze
-	huit cent soixante-quinze
-	huit cent soixante-seize
-	huit cent soixante-dix-sept
-	huit cent soixante-dix-huit
-	huit cent soixante-dix-neuf
-	huit cent quatre-vingts
-	huit cent quatre-vingt-un
-	huit cent quatre-vingt-deux
-	huit cent quatre-vingt-trois
-	huit cent quatre-vingt-quatre
-	huit cent quatre-vingt-cinq
-	huit cent quatre-vingt-six
-	huit cent quatre-vingt-sept
-	huit cent quatre-vingt-huit
-	huit cent quatre-vingt-neuf
-	huit cent quatre-vingt-dix
-	huit cent quatre-vingt-onze
-	huit cent quatre-vingt-douze
-	huit cent quatre-vingt-treize
-	huit cent quatre-vingt-quatorze
-	huit cent quatre-vingt-quinze
-	huit cent quatre-vingt-seize
-	huit cent quatre-vingt-dix-sept
-	huit cent quatre-vingt-dix-huit
-	huit cent quatre-vingt-dix-neuf
-	neuf cents
-	neuf cent un
-	neuf cent deux
-	neuf cent trois
-	neuf cent quatre
-	neuf cent cinq
-	neuf cent six
-	neuf cent sept
-	neuf cent huit
-	neuf cent neuf
-	neuf cent dix
-	neuf cent onze
-	neuf cent douze
-	neuf cent treize
-	neuf cent quatorze
-	neuf cent quinze
-	neuf cent seize
-	neuf cent dix-sept
-	neuf cent dix-huit
-	neuf cent dix-neuf
-	neuf cent vingt
-	neuf cent vingt et un
-	neuf cent vingt-deux
-	neuf cent vingt-trois
-	neuf cent vingt-quatre
-	neuf cent vingt-cinq
-	neuf cent vingt-six
-	neuf cent vingt-sept
-	neuf cent vingt-huit
-	neuf cent vingt-neuf
-	neuf cent trente
-	neuf cent trente et un
-	neuf cent trente-deux
-	neuf cent trente-trois
-	neuf cent trente-quatre
-	neuf cent trente-cinq
-	neuf cent trente-six
-	neuf cent trente-sept
-	neuf cent trente-huit
-	neuf cent trente-neuf
-	neuf cent quarante
-	neuf cent quarante et un
-	neuf cent quarante-deux
-	neuf cent quarante-trois
-	neuf cent quarante-quatre
-	neuf cent quarante-cinq
-	neuf cent quarante-six
-	neuf cent quarante-sept
-	neuf cent quarante-huit
-	neuf cent quarante-neuf
-	neuf cent cinquante
-	neuf cent cinquante et un
-	neuf cent cinquante-deux
-	neuf cent cinquante-trois
-	neuf cent cinquante-quatre
-	neuf cent cinquante-cinq
-	neuf cent cinquante-six
-	neuf cent cinquante-sept
-	neuf cent cinquante-huit
-	neuf cent cinquante-neuf
-	neuf cent soixante
-	neuf cent soixante et un
-	neuf cent soixante-deux
-	neuf cent soixante-trois
-	neuf cent soixante-quatre
-	neuf cent soixante-cinq
-	neuf cent soixante-six
-	neuf cent soixante-sept
-	neuf cent soixante-huit
-	neuf cent soixante-neuf
-	neuf cent soixante-dix
-	neuf cent soixante et onze
-	neuf cent soixante-douze
-	neuf cent soixante-treize
-	neuf cent soixante-quatorze
-	neuf cent soixante-quinze
-	neuf cent soixante-seize
-	neuf cent soixante-dix-sept
-	neuf cent soixante-dix-huit
-	neuf cent soixante-dix-neuf
-	neuf cent quatre-vingts
-	neuf cent quatre-vingt-un
-	neuf cent quatre-vingt-deux
-	neuf cent quatre-vingt-trois
-	neuf cent quatre-vingt-quatre
-	neuf cent quatre-vingt-cinq
-	neuf cent quatre-vingt-six
-	neuf cent quatre-vingt-sept
-	neuf cent quatre-vingt-huit
-	neuf cent quatre-vingt-neuf
-	neuf cent quatre-vingt-dix
-	neuf cent quatre-vingt-onze
-	neuf cent quatre-vingt-douze
-	neuf cent quatre-vingt-treize
-	neuf cent quatre-vingt-quatorze
-	neuf cent quatre-vingt-quinze
-	neuf cent quatre-vingt-seize
-	neuf cent quatre-vingt-dix-sept
-	neuf cent quatre-vingt-dix-huit
-	neuf cent quatre-vingt-dix-neuf */
+51	cinquante et un	
+52	cinquante deux	
+53	cinquante trois	
+54	cinquante quatre	
+55	cinquante cinq	
+56	cinquante six	
+57	cinquante sept	
+58	cinquante huit	
+59	cinquante neuf	
+60	soixante	
+61	soixante et un	
+62	soixante deux	
+63	soixante trois	
+64	soixante quatre	
+65	soixante cinq	
+66	soixante six	
+67	soixante sept	
+68	soixante huit	
+69	soixante neuf	
+70	soixante dix	
+71	soixante et onze	
+72	soixante douze	
+73	soixante treize	
+74	soixante quatorze	
+75	soixante quinze	
+76	soixante seize	
+77	soixante dix sept	
+78	soixante dix huit	
+79	soixante dix neuf	
+80	quatre vingts	
+81	quatre vingt un	
+82	quatre vingt deux	
+83	quatre vingt trois	
+84	quatre vingt quatre	
+85	quatre vingt cinq	
+86	quatre vingt six	
+87	quatre vingt sept	
+88	quatre vingt huit	
+89	quatre vingt neuf	
+90	quatre vingt dix	
+91	quatre vingt onze	
+92	quatre vingt douze	
+93	quatre vingt treize	
+94	quatre vingt quatorze	
+95	quatre vingt quinze	
+96	quatre vingt seize	
+97	quatre vingt dix sept	
+98	quatre vingt dix huit	
+99	quatre vingt dix neuf	
+100	cent	
+101	cent un
+102	cent deux
+103	cent trois
+104	cent quatre
+105	cent cinq
+106	cent six
+107	cent sept
+108	cent huit
+109	cent neuf
+110	cent dix
+111	cent onze
+112	cent douze
+113	cent treize
+114	cent quatorze
+115	cent quinze
+116	cent seize
+117	cent dix sept
+118	cent dix huit
+119	cent dix neuf
+120	cent vingt
+121	cent vingt et un
+122	cent vingt deux
+123	cent vingt trois
+124	cent vingt quatre
+125	cent vingt cinq
+126	cent vingt six
+127	cent vingt sept
+128	cent vingt huit
+129	cent vingt neuf
+130	cent trente
+131	cent trente et un
+132	cent trente deux
+133	cent trente trois
+134	cent trente quatre
+135	cent trente cinq
+136	cent trente six
+137	cent trente sept
+138	cent trente huit
+139	cent trente neuf
+140	cent quarante
+141	cent quarante et un
+142	cent quarante deux
+143	cent quarante trois
+144	cent quarante quatre
+145	cent quarante cinq
+146	cent quarante six
+147	cent quarante sept
+148	cent quarante huit
+149	cent quarante neuf
+150	cent cinquante
+151	cent cinquante et un
+152	cent cinquante deux
+153	cent cinquante trois
+154	cent cinquante quatre
+155	cent cinquante cinq
+156	cent cinquante six
+157	cent cinquante sept
+158	cent cinquante huit
+159	cent cinquante neuf
+160	cent soixante
+161	cent soixante et un
+162	cent soixante deux
+163	cent soixante trois
+164	cent soixante quatre
+165	cent soixante cinq
+166	cent soixante six
+167	cent soixante sept
+168	cent soixante huit
+169	cent soixante neuf
+170	cent soixante dix
+171	cent soixante et onze
+172	cent soixante douze
+173	cent soixante treize
+174	cent soixante quatorze
+175	cent soixante quinze
+176	cent soixante seize
+177	cent soixante dix sept
+178	cent soixante dix huit
+179	cent soixante dix neuf
+180	cent quatre vingts
+181	cent quatre vingt un
+182	cent quatre vingt deux
+183	cent quatre vingt trois
+184	cent quatre vingt quatre
+185	cent quatre vingt cinq
+186	cent quatre vingt six
+187	cent quatre vingt sept
+188	cent quatre vingt huit
+189	cent quatre vingt neuf
+190	cent quatre vingt dix
+191	cent quatre vingt onze
+192	cent quatre vingt douze
+193	cent quatre vingt treize
+194	cent quatre vingt quatorze
+195	cent quatre vingt quinze
+196	cent quatre vingt seize
+197	cent quatre vingt dix sept
+198	cent quatre vingt dix huit
+199	cent quatre vingt dix neuf
+200	deux cents
+201	deux cent un
+202	deux cent deux
+203	deux cent trois
+204	deux cent quatre
+205	deux cent cinq
+206	deux cent six
+207	deux cent sept
+208	deux cent huit
+209	deux cent neuf
+210	deux cent dix
+211	deux cent onze
+212	deux cent douze
+213	deux cent treize
+214	deux cent quatorze
+215	deux cent quinze
+216	deux cent seize
+217	deux cent dix sept
+218	deux cent dix huit
+219	deux cent dix neuf
+220	deux cent vingt
+221	deux cent vingt et un
+222	deux cent vingt deux
+223	deux cent vingt trois
+224	deux cent vingt quatre
+225	deux cent vingt cinq
+226	deux cent vingt six
+227	deux cent vingt sept
+228	deux cent vingt huit
+229	deux cent vingt neuf
+230	deux cent trente
+231	deux cent trente et un
+232	deux cent trente deux
+233	deux cent trente trois
+234	deux cent trente quatre
+235	deux cent trente cinq
+236	deux cent trente six
+237	deux cent trente sept
+238	deux cent trente huit
+239	deux cent trente neuf
+240	deux cent quarante
+241	deux cent quarante et un
+242	deux cent quarante deux
+243	deux cent quarante trois
+244	deux cent quarante quatre
+245	deux cent quarante cinq
+246	deux cent quarante six
+247	deux cent quarante sept
+248	deux cent quarante huit
+249	deux cent quarante neuf
+250	deux cent cinquante
+251	deux cent cinquante et un
+252	deux cent cinquante deux
+253	deux cent cinquante trois
+254	deux cent cinquante quatre
+255	deux cent cinquante cinq
+256	deux cent cinquante six
+257	deux cent cinquante sept
+258	deux cent cinquante huit
+259	deux cent cinquante neuf
+260	deux cent soixante
+261	deux cent soixante et un
+262	deux cent soixante deux
+263	deux cent soixante trois
+264	deux cent soixante quatre
+265	deux cent soixante cinq
+266	deux cent soixante six
+267	deux cent soixante sept
+268	deux cent soixante huit
+269	deux cent soixante neuf
+270	deux cent soixante dix
+271	deux cent soixante et onze
+272	deux cent soixante douze
+273	deux cent soixante treize
+274	deux cent soixante quatorze
+275	deux cent soixante quinze
+276	deux cent soixante seize
+277	deux cent soixante dix sept
+278	deux cent soixante dix huit
+279	deux cent soixante dix neuf
+280	deux cent quatre vingts
+281	deux cent quatre vingt un
+282	deux cent quatre vingt deux
+283	deux cent quatre vingt trois
+284	deux cent quatre vingt quatre
+285	deux cent quatre vingt cinq
+286	deux cent quatre vingt six
+287	deux cent quatre vingt sept
+288	deux cent quatre vingt huit
+289	deux cent quatre vingt neuf
+290	deux cent quatre vingt dix
+291	deux cent quatre vingt onze
+292	deux cent quatre vingt douze
+293	deux cent quatre vingt treize
+294	deux cent quatre vingt quatorze
+295	deux cent quatre vingt quinze
+296	deux cent quatre vingt seize
+297	deux cent quatre vingt dix sept
+298	deux cent quatre vingt dix huit
+299	deux cent quatre vingt dix neuf
+300	trois cents
+301	trois cent un
+302	trois cent deux
+303	trois cent trois
+304	trois cent quatre
+305	trois cent cinq
+306	trois cent six
+307	trois cent sept
+308	trois cent huit
+309	trois cent neuf
+310	trois cent dix
+311	trois cent onze
+312	trois cent douze
+313	trois cent treize
+314	trois cent quatorze
+315	trois cent quinze
+316	trois cent seize
+317	trois cent dix sept
+318	trois cent dix huit
+319	trois cent dix neuf
+320	trois cent vingt
+321	trois cent vingt et un
+322	trois cent vingt deux
+323	trois cent vingt trois
+324	trois cent vingt quatre
+325	trois cent vingt cinq
+326	trois cent vingt six
+327	trois cent vingt sept
+328	trois cent vingt huit
+329	trois cent vingt neuf
+330	trois cent trente
+331	trois cent trente et un
+332	trois cent trente deux
+333	trois cent trente trois
+334	trois cent trente quatre
+335	trois cent trente cinq
+336	trois cent trente six
+337	trois cent trente sept
+338	trois cent trente huit
+339	trois cent trente neuf
+340	trois cent quarante
+341	trois cent quarante et un
+342	trois cent quarante deux
+343	trois cent quarante trois
+344	trois cent quarante quatre
+345	trois cent quarante cinq
+346	trois cent quarante six
+347	trois cent quarante sept
+348	trois cent quarante huit
+349	trois cent quarante neuf
+350	trois cent cinquante
+351	trois cent cinquante et un
+352	trois cent cinquante deux
+353	trois cent cinquante trois
+354	trois cent cinquante quatre
+355	trois cent cinquante cinq
+356	trois cent cinquante six
+357	trois cent cinquante sept
+358	trois cent cinquante huit
+359	trois cent cinquante neuf
+360	trois cent soixante
+361	trois cent soixante et un
+362	trois cent soixante deux
+363	trois cent soixante trois
+364	trois cent soixante quatre
+365	trois cent soixante cinq
+366	trois cent soixante six
+367	trois cent soixante sept
+368	trois cent soixante huit
+369	trois cent soixante neuf
+370	trois cent soixante dix
+371	trois cent soixante et onze
+372	trois cent soixante douze
+373	trois cent soixante treize
+374	trois cent soixante quatorze
+375	trois cent soixante quinze
+376	trois cent soixante seize
+377	trois cent soixante dix sept
+378	trois cent soixante dix huit
+379	trois cent soixante dix neuf
+380	trois cent quatre vingts
+381	trois cent quatre vingt un
+382	trois cent quatre vingt deux
+383	trois cent quatre vingt trois
+384	trois cent quatre vingt quatre
+385	trois cent quatre vingt cinq
+386	trois cent quatre vingt six
+387	trois cent quatre vingt sept
+388	trois cent quatre vingt huit
+389	trois cent quatre vingt neuf
+390	trois cent quatre vingt dix
+391	trois cent quatre vingt onze
+392	trois cent quatre vingt douze
+393	trois cent quatre vingt treize
+394	trois cent quatre vingt quatorze
+395	trois cent quatre vingt quinze
+396	trois cent quatre vingt seize
+397	trois cent quatre vingt dix sept
+398	trois cent quatre vingt dix huit
+399	trois cent quatre vingt dix neuf
+400	quatre cents
+401	quatre cent un
+402	quatre cent deux
+403	quatre cent trois
+404	quatre cent quatre
+405	quatre cent cinq
+406	quatre cent six
+407	quatre cent sept
+408	quatre cent huit
+409	quatre cent neuf
+410	quatre cent dix
+411	quatre cent onze
+412	quatre cent douze
+413	quatre cent treize
+414	quatre cent quatorze
+415	quatre cent quinze
+416	quatre cent seize
+417	quatre cent dix sept
+418	quatre cent dix huit
+419	quatre cent dix neuf
+420	quatre cent vingt
+421	quatre cent vingt et un
+422	quatre cent vingt deux
+423	quatre cent vingt trois
+424	quatre cent vingt quatre
+425	quatre cent vingt cinq
+426	quatre cent vingt six
+427	quatre cent vingt sept
+428	quatre cent vingt huit
+429	quatre cent vingt neuf
+430	quatre cent trente
+431	quatre cent trente et un
+432	quatre cent trente deux
+433	quatre cent trente trois
+434	quatre cent trente quatre
+435	quatre cent trente cinq
+436	quatre cent trente six
+437	quatre cent trente sept
+438	quatre cent trente huit
+439	quatre cent trente neuf
+440	quatre cent quarante
+441	quatre cent quarante et un
+442	quatre cent quarante deux
+443	quatre cent quarante trois
+444	quatre cent quarante quatre
+445	quatre cent quarante cinq
+446	quatre cent quarante six
+447	quatre cent quarante sept
+448	quatre cent quarante huit
+449	quatre cent quarante neuf
+450	quatre cent cinquante
+451	quatre cent cinquante et un
+452	quatre cent cinquante deux
+453	quatre cent cinquante trois
+454	quatre cent cinquante quatre
+455	quatre cent cinquante cinq
+456	quatre cent cinquante six
+457	quatre cent cinquante sept
+458	quatre cent cinquante huit
+459	quatre cent cinquante neuf
+460	quatre cent soixante
+461	quatre cent soixante et un
+462	quatre cent soixante deux
+463	quatre cent soixante trois
+464	quatre cent soixante quatre
+465	quatre cent soixante cinq
+466	quatre cent soixante six
+467	quatre cent soixante sept
+468	quatre cent soixante huit
+469	quatre cent soixante neuf
+470	quatre cent soixante dix
+471	quatre cent soixante et onze
+472	quatre cent soixante douze
+473	quatre cent soixante treize
+474	quatre cent soixante quatorze
+475	quatre cent soixante quinze
+476	quatre cent soixante seize
+477	quatre cent soixante dix sept
+478	quatre cent soixante dix huit
+479	quatre cent soixante dix neuf
+480	quatre cent quatre vingts
+481	quatre cent quatre vingt un
+482	quatre cent quatre vingt deux
+483	quatre cent quatre vingt trois
+484	quatre cent quatre vingt quatre
+485	quatre cent quatre vingt cinq
+486	quatre cent quatre vingt six
+487	quatre cent quatre vingt sept
+488	quatre cent quatre vingt huit
+489	quatre cent quatre vingt neuf
+490	quatre cent quatre vingt dix
+491	quatre cent quatre vingt onze
+492	quatre cent quatre vingt douze
+493	quatre cent quatre vingt treize
+494	quatre cent quatre vingt quatorze
+495	quatre cent quatre vingt quinze
+496	quatre cent quatre vingt seize
+497	quatre cent quatre vingt dix sept
+498	quatre cent quatre vingt dix huit
+499	quatre cent quatre vingt dix neuf
+500	cinq cents
+501	cinq cent un
+502	cinq cent deux
+503	cinq cent trois
+504	cinq cent quatre
+505	cinq cent cinq
+506	cinq cent six
+507	cinq cent sept
+508	cinq cent huit
+509	cinq cent neuf
+510	cinq cent dix
+511	cinq cent onze
+512	cinq cent douze
+513	cinq cent treize
+514	cinq cent quatorze
+515	cinq cent quinze
+516	cinq cent seize
+517	cinq cent dix sept
+518	cinq cent dix huit
+519	cinq cent dix neuf
+520	cinq cent vingt
+521	cinq cent vingt et un
+522	cinq cent vingt deux
+523	cinq cent vingt trois
+524	cinq cent vingt quatre
+525	cinq cent vingt cinq
+526	cinq cent vingt six
+527	cinq cent vingt sept
+528	cinq cent vingt huit
+529	cinq cent vingt neuf
+530	cinq cent trente
+531	cinq cent trente et un
+532	cinq cent trente deux
+533	cinq cent trente trois
+534	cinq cent trente quatre
+535	cinq cent trente cinq
+536	cinq cent trente six
+537	cinq cent trente sept
+538	cinq cent trente huit
+539	cinq cent trente neuf
+540	cinq cent quarante
+541	cinq cent quarante et un
+542	cinq cent quarante deux
+543	cinq cent quarante trois
+544	cinq cent quarante quatre
+545	cinq cent quarante cinq
+546	cinq cent quarante six
+547	cinq cent quarante sept
+548	cinq cent quarante huit
+549	cinq cent quarante neuf
+550	cinq cent cinquante
+551	cinq cent cinquante et un
+552	cinq cent cinquante deux
+553	cinq cent cinquante trois
+554	cinq cent cinquante quatre
+555	cinq cent cinquante cinq
+556	cinq cent cinquante six
+557	cinq cent cinquante sept
+558	cinq cent cinquante huit
+559	cinq cent cinquante neuf
+560	cinq cent soixante
+561	cinq cent soixante et un
+562	cinq cent soixante deux
+563	cinq cent soixante trois
+564	cinq cent soixante quatre
+565	cinq cent soixante cinq
+566	cinq cent soixante six
+567	cinq cent soixante sept
+568	cinq cent soixante huit
+569	cinq cent soixante neuf
+570	cinq cent soixante dix
+571	cinq cent soixante et onze
+572	cinq cent soixante douze
+573	cinq cent soixante treize
+574	cinq cent soixante quatorze
+575	cinq cent soixante quinze
+576	cinq cent soixante seize
+577	cinq cent soixante dix sept
+578	cinq cent soixante dix huit
+579	cinq cent soixante dix neuf
+580	cinq cent quatre vingts
+581	cinq cent quatre vingt un
+582	cinq cent quatre vingt deux
+583	cinq cent quatre vingt trois
+584	cinq cent quatre vingt quatre
+585	cinq cent quatre vingt cinq
+586	cinq cent quatre vingt six
+587	cinq cent quatre vingt sept
+588	cinq cent quatre vingt huit
+589	cinq cent quatre vingt neuf
+590	cinq cent quatre vingt dix
+591	cinq cent quatre vingt onze
+592	cinq cent quatre vingt douze
+593	cinq cent quatre vingt treize
+594	cinq cent quatre vingt quatorze
+595	cinq cent quatre vingt quinze
+596	cinq cent quatre vingt seize
+597	cinq cent quatre vingt dix sept
+598	cinq cent quatre vingt dix huit
+599	cinq cent quatre vingt dix neuf
+600	six cents
+601	six cent un
+602	six cent deux
+603	six cent trois
+604	six cent quatre
+605	six cent cinq
+606	six cent six
+607	six cent sept
+608	six cent huit
+609	six cent neuf
+610	six cent dix
+611	six cent onze
+612	six cent douze
+613	six cent treize
+614	six cent quatorze
+615	six cent quinze
+616	six cent seize
+617	six cent dix sept
+618	six cent dix huit
+619	six cent dix neuf
+620	six cent vingt
+621	six cent vingt et un
+622	six cent vingt deux
+623	six cent vingt trois
+624	six cent vingt quatre
+625	six cent vingt cinq
+626	six cent vingt six
+627	six cent vingt sept
+628	six cent vingt huit
+629	six cent vingt neuf
+630	six cent trente
+631	six cent trente et un
+632	six cent trente deux
+633	six cent trente trois
+634	six cent trente quatre
+635	six cent trente cinq
+636	six cent trente six
+637	six cent trente sept
+638	six cent trente huit
+639	six cent trente neuf
+640	six cent quarante
+641	six cent quarante et un
+642	six cent quarante deux
+643	six cent quarante trois
+644	six cent quarante quatre
+645	six cent quarante cinq
+646	six cent quarante six
+647	six cent quarante sept
+648	six cent quarante huit
+649	six cent quarante neuf
+650	six cent cinquante
+651	six cent cinquante et un
+652	six cent cinquante deux
+653	six cent cinquante trois
+654	six cent cinquante quatre
+655	six cent cinquante cinq
+656	six cent cinquante six
+657	six cent cinquante sept
+658	six cent cinquante huit
+659	six cent cinquante neuf
+660	six cent soixante
+661	six cent soixante et un
+662	six cent soixante deux
+663	six cent soixante trois
+664	six cent soixante quatre
+665	six cent soixante cinq
+666	six cent soixante six
+667	six cent soixante sept
+668	six cent soixante huit
+669	six cent soixante neuf
+670	six cent soixante dix
+671	six cent soixante et onze
+672	six cent soixante douze
+673	six cent soixante treize
+674	six cent soixante quatorze
+675	six cent soixante quinze
+676	six cent soixante seize
+677	six cent soixante dix sept
+678	six cent soixante dix huit
+679	six cent soixante dix neuf
+680	six cent quatre vingts
+681	six cent quatre vingt un
+682	six cent quatre vingt deux
+683	six cent quatre vingt trois
+684	six cent quatre vingt quatre
+685	six cent quatre vingt cinq
+686	six cent quatre vingt six
+687	six cent quatre vingt sept
+688	six cent quatre vingt huit
+689	six cent quatre vingt neuf
+690	six cent quatre vingt dix
+691	six cent quatre vingt onze
+692	six cent quatre vingt douze
+693	six cent quatre vingt treize
+694	six cent quatre vingt quatorze
+695	six cent quatre vingt quinze
+696	six cent quatre vingt seize
+697	six cent quatre vingt dix sept
+698	six cent quatre vingt dix huit
+699	six cent quatre vingt dix neuf
+700	sept cents
+701	sept cent un
+702	sept cent deux
+703	sept cent trois
+704	sept cent quatre
+705	sept cent cinq
+706	sept cent six
+707	sept cent sept
+708	sept cent huit
+709	sept cent neuf
+710	sept cent dix
+711	sept cent onze
+712	sept cent douze
+713	sept cent treize
+714	sept cent quatorze
+715	sept cent quinze
+716	sept cent seize
+717	sept cent dix sept
+718	sept cent dix huit
+719	sept cent dix neuf
+720	sept cent vingt
+721	sept cent vingt et un
+722	sept cent vingt deux
+723	sept cent vingt trois
+724	sept cent vingt quatre
+725	sept cent vingt cinq
+726	sept cent vingt six
+727	sept cent vingt sept
+728	sept cent vingt huit
+729	sept cent vingt neuf
+730	sept cent trente
+731	sept cent trente et un
+732	sept cent trente deux
+733	sept cent trente trois
+734	sept cent trente quatre
+735	sept cent trente cinq
+736	sept cent trente six
+737	sept cent trente sept
+738	sept cent trente huit
+739	sept cent trente neuf
+740	sept cent quarante
+741	sept cent quarante et un
+742	sept cent quarante deux
+743	sept cent quarante trois
+744	sept cent quarante quatre
+745	sept cent quarante cinq
+746	sept cent quarante six
+747	sept cent quarante sept
+748	sept cent quarante huit
+749	sept cent quarante neuf
+750	sept cent cinquante
+751	sept cent cinquante et un
+752	sept cent cinquante deux
+753	sept cent cinquante trois
+754	sept cent cinquante quatre
+755	sept cent cinquante cinq
+756	sept cent cinquante six
+757	sept cent cinquante sept
+758	sept cent cinquante huit
+759	sept cent cinquante neuf
+760	sept cent soixante
+761	sept cent soixante et un
+762	sept cent soixante deux
+763	sept cent soixante trois
+764	sept cent soixante quatre
+765	sept cent soixante cinq
+766	sept cent soixante six
+767	sept cent soixante sept
+768	sept cent soixante huit
+769	sept cent soixante neuf
+770	sept cent soixante dix
+771	sept cent soixante et onze
+772	sept cent soixante douze
+773	sept cent soixante treize
+774	sept cent soixante quatorze
+775	sept cent soixante quinze
+776	sept cent soixante seize
+777	sept cent soixante dix sept
+778	sept cent soixante dix huit
+779	sept cent soixante dix neuf
+780	sept cent quatre vingts
+781	sept cent quatre vingt un
+782	sept cent quatre vingt deux
+783	sept cent quatre vingt trois
+784	sept cent quatre vingt quatre
+785	sept cent quatre vingt cinq
+786	sept cent quatre vingt six
+787	sept cent quatre vingt sept
+788	sept cent quatre vingt huit
+789	sept cent quatre vingt neuf
+790	sept cent quatre vingt dix
+791	sept cent quatre vingt onze
+792	sept cent quatre vingt douze
+793	sept cent quatre vingt treize
+794	sept cent quatre vingt quatorze
+795	sept cent quatre vingt quinze
+796	sept cent quatre vingt seize
+797	sept cent quatre vingt dix sept
+798	sept cent quatre vingt dix huit
+799	sept cent quatre vingt dix neuf
+800	huit cents
+801	huit cent un
+802	huit cent deux
+803	huit cent trois
+804	huit cent quatre
+805	huit cent cinq
+806	huit cent six
+807	huit cent sept
+808	huit cent huit
+809	huit cent neuf
+810	huit cent dix
+811	huit cent onze
+812	huit cent douze
+813	huit cent treize
+814	huit cent quatorze
+815	huit cent quinze
+816	huit cent seize
+817	huit cent dix sept
+818	huit cent dix huit
+819	huit cent dix neuf
+820	huit cent vingt
+821	huit cent vingt et un
+822	huit cent vingt deux
+823	huit cent vingt trois
+824	huit cent vingt quatre
+825	huit cent vingt cinq
+826	huit cent vingt six
+827	huit cent vingt sept
+828	huit cent vingt huit
+829	huit cent vingt neuf
+830	huit cent trente
+831	huit cent trente et un
+832	huit cent trente deux
+833	huit cent trente trois
+834	huit cent trente quatre
+835	huit cent trente cinq
+836	huit cent trente six
+837	huit cent trente sept
+838	huit cent trente huit
+839	huit cent trente neuf
+840	huit cent quarante
+841	huit cent quarante et un
+842	huit cent quarante deux
+843	huit cent quarante trois
+844	huit cent quarante quatre
+845	huit cent quarante cinq
+846	huit cent quarante six
+847	huit cent quarante sept
+848	huit cent quarante huit
+849	huit cent quarante neuf
+850	huit cent cinquante
+851	huit cent cinquante et un
+852	huit cent cinquante deux
+853	huit cent cinquante trois
+854	huit cent cinquante quatre
+855	huit cent cinquante cinq
+856	huit cent cinquante six
+857	huit cent cinquante sept
+858	huit cent cinquante huit
+859	huit cent cinquante neuf
+860	huit cent soixante
+861	huit cent soixante et un
+862	huit cent soixante deux
+863	huit cent soixante trois
+864	huit cent soixante quatre
+865	huit cent soixante cinq
+866	huit cent soixante six
+867	huit cent soixante sept
+868	huit cent soixante huit
+869	huit cent soixante neuf
+870	huit cent soixante dix
+871	huit cent soixante et onze
+872	huit cent soixante douze
+873	huit cent soixante treize
+874	huit cent soixante quatorze
+875	huit cent soixante quinze
+876	huit cent soixante seize
+877	huit cent soixante dix sept
+878	huit cent soixante dix huit
+879	huit cent soixante dix neuf
+880	huit cent quatre vingts
+881	huit cent quatre vingt un
+882	huit cent quatre vingt deux
+883	huit cent quatre vingt trois
+884	huit cent quatre vingt quatre
+885	huit cent quatre vingt cinq
+886	huit cent quatre vingt six
+887	huit cent quatre vingt sept
+888	huit cent quatre vingt huit
+889	huit cent quatre vingt neuf
+890	huit cent quatre vingt dix
+891	huit cent quatre vingt onze
+892	huit cent quatre vingt douze
+893	huit cent quatre vingt treize
+894	huit cent quatre vingt quatorze
+895	huit cent quatre vingt quinze
+896	huit cent quatre vingt seize
+897	huit cent quatre vingt dix sept
+898	huit cent quatre vingt dix huit
+899	huit cent quatre vingt dix neuf
+900	neuf cents
+901	neuf cent un
+902	neuf cent deux
+903	neuf cent trois
+904	neuf cent quatre
+905	neuf cent cinq
+906	neuf cent six
+907	neuf cent sept
+908	neuf cent huit
+909	neuf cent neuf
+910	neuf cent dix
+911	neuf cent onze
+912	neuf cent douze
+913	neuf cent treize
+914	neuf cent quatorze
+915	neuf cent quinze
+916	neuf cent seize
+917	neuf cent dix sept
+918	neuf cent dix huit
+919	neuf cent dix neuf
+920	neuf cent vingt
+921	neuf cent vingt et un
+922	neuf cent vingt deux
+923	neuf cent vingt trois
+924	neuf cent vingt quatre
+925	neuf cent vingt cinq
+926	neuf cent vingt six
+927	neuf cent vingt sept
+928	neuf cent vingt huit
+929	neuf cent vingt neuf
+930	neuf cent trente
+931	neuf cent trente et un
+932	neuf cent trente deux
+933	neuf cent trente trois
+934	neuf cent trente quatre
+935	neuf cent trente cinq
+936	neuf cent trente six
+937	neuf cent trente sept
+938	neuf cent trente huit
+939	neuf cent trente neuf
+940	neuf cent quarante
+941	neuf cent quarante et un
+942	neuf cent quarante deux
+943	neuf cent quarante trois
+944	neuf cent quarante quatre
+945	neuf cent quarante cinq
+946	neuf cent quarante six
+947	neuf cent quarante sept
+948	neuf cent quarante huit
+949	neuf cent quarante neuf
+950	neuf cent cinquante
+951	neuf cent cinquante et un
+952	neuf cent cinquante deux
+953	neuf cent cinquante trois
+954	neuf cent cinquante quatre
+955	neuf cent cinquante cinq
+956	neuf cent cinquante six
+957	neuf cent cinquante sept
+958	neuf cent cinquante huit
+959	neuf cent cinquante neuf
+960	neuf cent soixante
+961	neuf cent soixante et un
+962	neuf cent soixante deux
+963	neuf cent soixante trois
+964	neuf cent soixante quatre
+965	neuf cent soixante cinq
+966	neuf cent soixante six
+967	neuf cent soixante sept
+968	neuf cent soixante huit
+969	neuf cent soixante neuf
+970	neuf cent soixante dix
+971	neuf cent soixante et onze
+972	neuf cent soixante douze
+973	neuf cent soixante treize
+974	neuf cent soixante quatorze
+975	neuf cent soixante quinze
+976	neuf cent soixante seize
+977	neuf cent soixante dix sept
+978	neuf cent soixante dix huit
+979	neuf cent soixante dix neuf
+980	neuf cent quatre vingts
+981	neuf cent quatre vingt un
+982	neuf cent quatre vingt deux
+983	neuf cent quatre vingt trois
+984	neuf cent quatre vingt quatre
+985	neuf cent quatre vingt cinq
+986	neuf cent quatre vingt six
+987	neuf cent quatre vingt sept
+988	neuf cent quatre vingt huit
+989	neuf cent quatre vingt neuf
+990	neuf cent quatre vingt dix
+991	neuf cent quatre vingt onze
+992	neuf cent quatre vingt douze
+993	neuf cent quatre vingt treize
+994	neuf cent quatre vingt quatorze
+995	neuf cent quatre vingt quinze
+996	neuf cent quatre vingt seize
+997	neuf cent quatre vingt dix sept
+998	neuf cent quatre vingt dix huit
+999	neuf cent quatre vingt dix neuf
+1000	mille */
